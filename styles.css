@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(177, 255, 232);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header_left img{
+    object-fit: contain;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header_left img:hover{
+    transform: scale(1.5); 
+}
+.header {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 999;/* high priority */
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid rgb(158, 255, 219);
+    padding: 10px;
+    background-color: white;
+}
+
+.header_left {
+    display: flex;
+}
+
+.header_right{
+    display: flex;
+}
+
+.header_search{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    /*background-color: #eef3f8;*/
+    background-color: rgb(168, 254, 231);
+}
+
+.header_search:hover{
+    color: black;
+}
+
+.header_search input{
+    outline: none;
+    border: none;
+    background: none;
+    background-color: white;
+}
+
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    /*background-color: rgb(221, 255, 255);*/
+    cursor: pointer;
+}
+
+.headerOption:hover{
+    color: black;
+}
+
+.headerOption h3{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.headerOption_icon{
+    margin-right: 5px;
+    height: 22px;
+    width: 20px;
+}
+
+.headerOption_icon:hover{
+    color:rgb(220, 13, 82);
+}
+
+/*Main Body*/
+.body_main{
+    display: flex;
+    margin-top: 40px;
+    width: 1200px;
+   /* margin: 0 20px; 0->top bottom ,20->left right*/  
+   margin-left: 20px;
+   margin-right: 20px;  
+}
+
+.sidebar {
+    position: sticky;
+    top: 80px;
+    flex: 0.20; /*giving 20% space */
+    border-radius: 12px;
+    text-align: center;
+    height: fit-content;
+}
+
+.sidebar_top img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.sidebar_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px;
+    border-color: solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.sidebar_personicon{
+    font-size: 45px;
+}
+
+.sidebar_stats{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.sidebar_stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_stat p{
+    color: gray;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.sidebar_stat p:hover{
+    color: black;
+}
+
+.sidebar_statNumber{
+    font-weight: bold;
+    color: rgb(164, 28, 219) !important;/*to overwrite*/
+}
+
+.sidebar_statNumber:hover{
+    transform: scale(1.5);
+}
+
+.sidebar_top h4{
+    color: gray;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sidebar_top h2{
+    font-size: 18px;
+}
+
+.sidebar_bottom{
+    text-align: left;
+    padding: 10px white;
+    border: 1px;
+    border-color: solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar_recentItem{
+    display: flex;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.sidebar_recentItem:hover{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.15); 
+}
+
+.sidebar_hash{
+    margin: 0 10px;
+}
+
+.sidebar_bottom p{
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+/*Feed Section*/
+.feed{
+    flex: 0.60;
+    margin: 0 20px;
+}
+
+.feed_inputContainer{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius:10px ;
+    margin-bottom: 20px;
+}
+
+.feed_input{
+    border: 1px solid lightgray;
+    border-radius:30px ;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+}
+
+.feed_input form {
+    display: flex;
+    width: 100%;
+}
+
+.feed_input form input { 
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+.feed_inputOptions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputOption {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inputOption:hover{
+    color: black !important;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transform: scale(1.25);
+}
+
+.inputOption h4{
+    margin-left: 5px;
+}
+
+/*Post Section*/
+.post{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.post_header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post_info{
+    margin-left: 10px;
+}
+
+.post_info p {
+    font-size: 13px;
+    color: gray;
+}
+
+.post_info h3{
+    font-size: 16px;
+}
+
+.post_body{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.inputOptions{
+    font-size: 12px;
+}
+
+.inputOptions:hover{
+    transform:scale(1.15);
+    color: palevioletred;
+}
+
+.feedOption_icon{
+    color: blue !important;
+}
+
+.feedOption_icon:hover{
+    color: rgb(150, 94, 218) !important;
+}
+
+.AddOptions{
+    display: flex;
+    align-items:center;
+    margin-top: -20px;
+    margin-left: 300px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.AddOptions h4{
+    margin-top: 40px;
+    margin-inline-start: -29px;
+    font-size: 16px;
+}
+
+.AddOptions h4:hover{
+    color: black;
+}
+
+.AddOptions:hover{
+    color: gold;
+    transform: scale(1.2);
+}
+
+.Recommendation_Box{
+    flex: 0.20;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.toprecommendation{
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius:10px ;
+    margin-bottom: 20px;
+}
+
+.dot{
+    display: flex;
+    align-items:center;
+    margin-top: -30px;
+    margin-left: 200px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dot:hover{
+    color: black;
+    transform: scale(1.25);
+}
+
+.users{
+    background-color: white;
+    position: sticky;
+}
+
+.rpost_info{
+    margin-left: 50px;
+    margin-top: -45px;
+}
+
+.rpost_info h3:hover{
+    background-color: rgb(143, 255, 216);
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+.rpost_info p:hover{
+    background-color: rgb(143, 255, 216);
+    color: blue;
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+.rmsg i{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight:bolder;
+    color: solid black;
+}
+
+.rmsg p{
+    margin-left: 67px;
+    margin-top: -20px;
+}
+
+.num{
+    margin-left: 67px;
+    margin-top: 3px;
+}
+
+.rAddOptions {
+   margin-bottom: 20px;
+}
+
+.rAddOptions i{
+    margin-left: 40px;
+    margin-top: 10px;
+    color: blue;
+    font-size:x-large;
+}
+
+.rAddOptions h4{
+    margin-left: 68px;
+    margin-top: -22px;
+    color: blue;
+    font-size:large;
+}
+
+.rAddOptions:hover{
+    transform: scale(1.25);
+}

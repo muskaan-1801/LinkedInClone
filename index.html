@@ -1,0 +1,519 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>SelfCreation</title>
+
+    <script src="/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#1").on("click",function(){
+                window.location.href="resgal.html"
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <!-- Header Starts -->
+    <div class="header">
+        <div class="header_left">
+<img src="s1.png" alt="img is inserted">
+<div class="header_search">
+    <i class="material-icons">search</i>
+    <input type="text" placeholder="Search Here"/>
+</div>
+        </div>
+        <div class="header_right">
+            <div class="headerOption">
+                <i class="material-icons headerOption_icon">home</i>
+                <h3>Home</h3>
+            </div>
+            <div class="headerOption">
+                <i class="material-icons headerOption_icon">people</i>
+                <h3>My Network</h3>
+            </div>
+            <div class="headerOption">
+                <i class="material-icons headerOption_icon">work</i>
+                <h3>Jobs</h3>
+            </div>
+            <div class="headerOption">
+                <i class="material-icons headerOption_icon">message</i>
+                <h3>Messaging</h3>
+            </div>
+            <div class="headerOption">
+                <i class="material-icons headerOption_icon">notifications</i>
+                <h3>Notifications</h3>
+            </div>
+            <div class="headerOption">
+                <i class="material-icons headerOption_icon">person</i>
+                <h3>Me</h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- Header Ends -->
+    <!-- Main Body Starts -->
+    <div class="body_main">
+        <!-- Sidebar Starts -->
+        <div class="sidebar">
+            <div class="sidebar_top">
+                <img src="s2.jpg" alt="img">
+                <i class="material-icons sidebar_personicon">account_circle</i>
+                <h2>Muskaan Sharma</h2>
+                <h4>muskaans1801@gmail.com</h4>
+            </div>
+            <div class="sidebar_stats">
+                <div class="sidebar_stat">
+                    <p>Who Viewed Your Profile</p>
+                    <p class="sidebar_statNumber">
+                        3,000
+                    </p>
+                </div>
+
+                <div class="sidebar_stat">
+                    <p>Views on Post</p>
+                    <p class="sidebar_statNumber">
+                        5,000
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar_bottom">
+                <p>Recent</p>
+                <div class="sidebar_recentItem">
+                    <span class="sidebar_hash">#</span>
+                    <p>reactjs</p>
+                </div>
+                <div class="sidebar_recentItem">
+                    <span class="sidebar_hash">#</span>
+                    <p>Programming</p>
+                </div>
+                <div class="sidebar_recentItem">
+                    <span class="sidebar_hash">#</span>
+                    <p>Software Enginnering</p>
+                </div>
+                <div class="sidebar_recentItem">
+                    <span class="sidebar_hash">#</span>
+                    <p>Design Analyst</p>
+                </div>
+                <div class="sidebar_recentItem">
+                    <span class="sidebar_hash">#</span>
+                    <p>Developer</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Sidebar Ends -->
+        <!-- Feed Starts -->
+        <div class="feed">
+            <div class="feed_inputContainer">
+                <div class="feed_input">
+                    <i class="material-icons ">create</i>
+                    <form>
+                        <input type="text"/>
+                        <button>Send</button>
+                    </form>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOption">
+                        <i style="color:rgb(56, 155, 231)" class="material-icons">insert_photo</i>
+                        <h4 id="1">Photos</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color:rgb(230, 94, 94)" class="material-icons">subscriptions</i>
+                        <h4 id="2">Videos</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color:rgb(56, 231, 117)" class="material-icons">event</i>
+                        <h4 id="3">Events</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color:rgb(231, 56, 123)" class="material-icons">article</i>
+                        <h4 id="4">Write Article</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Post Starts -->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="post_info">
+                        <h3>Muskaan Sharma</h3>
+                        <p>Job Description</p>
+                    </div>
+                    <div class="AddOptions">
+                        <i class="material-icons">person_add</i>
+                        <h4>Follow</h4>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOptions" id="12">
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon" id="23" onclick="myFunction(this.e)">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+                    <script>
+                        var flag = true
+                        function myFunction(e){
+                            var f = document.getElementsByTagName('i')
+                            if(flag){
+                                alert("You Liked a post")
+                                f[15].style.backgroundColor = "whitesmoke"
+                                flag = false
+                            }
+                            else{
+                                alert("You Unliked a post")
+                                flag = true
+                                f[15].style.backgroundColor = "white"
+                            }
+                           }
+                    </script>
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">share</i>
+                        <h4>Share</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">send</i>
+                        <h4>Send</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">bookmark</i>
+                        <h4>Add To Bookmark</h4>
+                    </div>
+
+                </div>
+               
+            </div>
+            <!-- Post Ends -->
+
+             <!-- Post Starts -->
+             <div class="post">
+                <div class="post_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="post_info">
+                        <h3>Muskaan Sharma</h3>
+                        <p>Job Description</p>
+                    </div>
+                    <div class="AddOptions">
+                        <i class="material-icons">person_add</i>
+                        <h4>Follow</h4>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">share</i>
+                        <h4>Share</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">send</i>
+                        <h4>Send</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">bookmark</i>
+                        <h4>Add To Bookmark</h4>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Post Ends -->
+
+             <!-- Post Starts -->
+             <div class="post">
+                <div class="post_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="post_info">
+                        <h3>Muskaan Sharma</h3>
+                        <p>Job Description</p>
+                    </div>
+                    <div class="AddOptions">
+                        <i class="material-icons">person_add</i>
+                        <h4>Follow</h4>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">share</i>
+                        <h4>Share</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">send</i>
+                        <h4>Send</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">bookmark</i>
+                        <h4>Add To Bookmark</h4>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Post Ends -->
+
+             <!-- Post Starts -->
+             <div class="post">
+                <div class="post_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="post_info">
+                        <h3>Muskaan Sharma</h3>
+                        <p>Job Description</p>
+                    </div>
+                    <div class="AddOptions">
+                        <i class="material-icons">person_add</i>
+                        <h4>Follow</h4>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">share</i>
+                        <h4>Share</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">send</i>
+                        <h4>Send</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">bookmark</i>
+                        <h4>Add To Bookmark</h4>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Post Ends -->
+
+             <!-- Post Starts -->
+             <div class="post">
+                <div class="post_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="post_info">
+                        <h3>Muskaan Sharma</h3>
+                        <p>Job Description</p>
+                    </div>
+                    <div class="AddOptions">
+                        <i class="material-icons">person_add</i>
+                        <h4>Follow</h4>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">share</i>
+                        <h4>Share</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">send</i>
+                        <h4>Send</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">bookmark</i>
+                        <h4>Add To Bookmark</h4>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Post Ends -->
+
+             <!-- Post Starts -->
+             <div class="post">
+                <div class="post_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="post_info">
+                        <h3>Muskaan Sharma</h3>
+                        <p>Job Description</p>
+                    </div>
+                    <div class="AddOptions">
+                        <i class="material-icons">person_add</i>
+                        <h4>Follow</h4>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOptions">
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">share</i>
+                        <h4>Share</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">send</i>
+                        <h4>Send</h4>
+                    </div>
+
+                    <div class="inputOptions">
+                        <i style="color: gray" class="material-icons feedOption_icon">bookmark</i>
+                        <h4>Add To Bookmark</h4>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Post Ends -->
+        </div>
+        <!-- Feed Ends -->
+         <!-- Recommendation Box Starts -->
+         <div class="Recommendation_Box">
+            <div class="toprecommendation">
+                <h4>Recommended for you</h4>
+                <i class="material-icons dot">more_vert</i>
+            </div>
+            <div class="users">
+                 <!-- user1 -->
+                <div class="rpost_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="rpost_info">
+                        <h3>Shweta Kumari</h3>
+                        <p>Talent Acquisition at EY|Non-tech Hiring</p>
+                    </div>
+                </div>
+    
+                <div class="rmsg">
+                    <i class="material-icons">trending_up</i>
+                    <p>People in India are following</p>
+                </div>
+    
+                <div class="num">
+                    <p>346,640 followers</p>
+                </div>
+    
+                <div class="rAddOptions">
+                    <i class="material-icons Plus">add</i>
+                    <h4>Follow</h4>
+                </div>
+                <hr size="0.1" width="100%" color="black">
+                <br>
+                <!-- user 2 -->
+                <div class="rpost_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="rpost_info">
+                        <h3>Ritika Singh</h3>
+                        <p>Human Resources Consultant at Genpact</p>
+                    </div>
+                </div>
+    
+                <div class="rmsg">
+                    <i class="material-icons">trending_up</i>
+                    <p>People in India are following</p>
+                </div>
+    
+                <div class="num">
+                    <p>178,338 followers</p>
+                </div>
+    
+                <div class="rAddOptions">
+                    <i class="material-icons Plus">add</i>
+                    <h4>Follow</h4>
+                </div>
+                <hr size="0.1" width="100%" color="black">
+                <br>
+                <!-- user 3 -->
+                <div class="rpost_header">
+                    <i class="material-icons sidebar_personicon">account_circle</i>
+                    <div class="rpost_info">
+                        <h3>Neha Patel</h3>
+                        <p>Talent Acquisition & Human Resource Buisness Partner</p>
+                    </div>
+                </div>
+    
+                <div class="rmsg">
+                    <i class="material-icons">trending_up</i>
+                    <p>People in India are following</p>
+                </div>
+    
+                <div class="num">
+                    <p>94,811 followers</p>
+                </div>
+    
+                <div class="rAddOptions">
+                    <i class="material-icons Plus">add</i>
+                    <h4>Follow</h4>
+                </div>
+            </div>      
+        </div>
+        <!-- Recommendation Box Ends -->
+    </div>
+    <!-- Main Body Ends -->
+</body>
+</html>
+
