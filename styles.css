@@ -4,7 +4,9 @@
 }
 
 body{
-    background-color:rgb(177, 255, 232);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,15,200,1) 47%,
+     rgba(23,60,242,1) 79%, rgba(0,94,255,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +29,15 @@ body{
     top: 0;
     z-index: 999;/* high priority */
     justify-content: space-evenly;
-    border-bottom: 0.1px solid rgb(158, 255, 219);
+    border-bottom: 0.1px solid  llinear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,15,200,1) 47%,
+    rgba(23,60,242,1) 79%, rgba(0,94,255,1) 100%);
     padding: 10px;
     background-color: white;
+}
+
+.t{
+    padding: 6px;
+    border-radius: 5px;
 }
 
 .header_left {
@@ -41,16 +49,21 @@ body{
 }
 
 .header_search{
-    padding: 10px;
+    padding: 9px;
     display: flex;
     align-items: center;
     border-radius: 5px;
     height: 22px;
     color: gray;
-    /*background-color: #eef3f8;*/
-    background-color: rgb(168, 254, 231);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,15,200,1) 47%,
+     rgba(23,60,242,1) 79%, rgba(0,94,255,1) 100%);
 }
 
+.s{
+    padding: 8px;
+    border-radius: 5px;
+}
 .header_search:hover{
     color: black;
 }
@@ -351,7 +364,7 @@ body{
 }
 
 .AddOptions:hover{
-    color: gold;
+    color: rgb(7, 7, 88);
     transform: scale(1.2);
 }
 
@@ -397,14 +410,19 @@ body{
 }
 
 .rpost_info h3:hover{
-    background-color: rgb(143, 255, 216);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,15,200,1) 47%,
+     rgba(23,60,242,1) 79%, rgba(0,94,255,1) 100%);
+     color: white;
     font-weight: bolder;
     transform: scale(1.05);
 }
 
 .rpost_info p:hover{
-    background-color: rgb(143, 255, 216);
-    color: blue;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,15,200,1) 47%,
+     rgba(23,60,242,1) 79%, rgba(0,94,255,1) 100%);
+    color: white;
     font-weight: bolder;
     transform: scale(1.05);
 }

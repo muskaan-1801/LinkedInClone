@@ -35,7 +35,7 @@ function validate(){
 
     else{
         alert('Welcome muskaan1801')
-        f1.action = 'index.html'
+        f1.action = 'front.html'
     }
     
 }
